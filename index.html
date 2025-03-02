@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+    <head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+
 <head>
     <meta charset="UTF-8">
     <title>PX- Champion Support</title>
@@ -89,18 +94,19 @@
     </style>
     
     <style>
-    /* 新增背景特效 */
+
     body {
         background: 
-            linear-gradient(45deg, #0a0a0f 25%, #1a1420 100%),
-            url('https://img.zcool.cn/community/01b0d35e47c711a8012165184a0a1f.jpg') fixed;
+            linear-gradient(45deg, rgba(10,10,15,0.93) 25%, rgba(20,16,11,0.89) 100%),
+            url('https://game.gtimg.cn/images/lol/act/img/skin/big_039e7426-9c71-4210-b40a-229e1aec313a.jpg') fixed;
         background-blend-mode: multiply;
         background-size: cover;
+        background-position: center;
         position: relative;
         min-height: 100vh;
+        background-repeat: no-repeat;
     }
-
-    /* 标题美化 */
+   
     h1 {
         position: relative;
         font-size: 3.2em;
@@ -124,7 +130,7 @@
     h1::before { left: 0; }
     h1::after { right: 0; }
 
-    /* 角色标题美化 */
+   
     .role-title {
         position: relative;
         padding: 12px 30px;
@@ -139,7 +145,7 @@
         box-shadow: 0 0 15px rgba(196,31,59,0.3);
     }
 
-    /* 英雄项增强 */
+
     .hero-item {
         position: relative;
         border-left: 3px solid #785a28;
@@ -167,7 +173,7 @@
         left: 100%;
     }
 
-    /* 逻辑标记美化 */
+ 
     .logic-mark {
         background: rgba(0,204,102,0.15);
         padding: 2px 8px;
@@ -176,7 +182,7 @@
         font-weight: bold;
     }
 
-    /* 新增粒子背景效果 */
+ 
     .particles {
         position: fixed;
         width: 100%;
@@ -190,7 +196,7 @@
 
 
 <style>
-    /* 角色标题容器 */
+   
     .role-title {
         position: relative;
         padding: 15px 40px;
@@ -212,7 +218,7 @@
         transition: all 0.3s ease;
     }
 
-    /* 自定义图标系统 */
+ 
     .role-title::before {
         content: '';
         display: inline-block;
@@ -223,35 +229,35 @@
         background-size: contain;
         filter: drop-shadow(0 0 4px #c8aa6e);
         transition: all 0.3s ease;
-        margin-left: 90px; /* 向右移动标题和图标 */
+        margin-left: 90px; 
     }
 
-    /* 上单图标 */
+
     .role-title:nth-child(1)::before {
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23c41f3b" d="M11 2v2.07A8.002 8.002 0 0 0 4.07 11H2v2h2.07A8.002 8.002 0 0 0 11 19.93V22h2v-2.07A8.002 8.002 0 0 0 19.93 13H22v-2h-2.07A8.002 8.002 0 0 0 13 4.07V2h-2zm1 16a6 6 0 1 1 0-12 6 6 0 0 1 0 12z"/></svg>');
     }
 
-    /* 中单图标 */
+
     .role-title:nth-child(2)::before {
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23c41f3b" d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 3.24L5 6.76v4.48C5 15.55 8.5 20 12 20s7-4.45 7-8.76V6.76L12 4.24zM12 8a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>');
     }
 
-    /* 打野图标 */
+
     .role-title:nth-child(3)::before {
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23c41f3b" d="M12 2L1 21h22L12 2zm0 4.47L18.53 19H5.47L12 6.47zM13 14h-2v2h2v-2zm0-4h-2v4h2v-4z"/></svg>');
     }
 
-    /* ADC图标 */
+
     .role-title:nth-child(4)::before {
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23c41f3b" d="M13 2v2h4v2h-4v2h6V4h-2V2h-4zm8 7h-2v2h2V9zM3 9H1v2h2V9zm18 4h-2v2h2v-2zM3 13H1v2h2v-2zm12-8h-2v2h2V5zM9 5H7v2h2V5zM5 5H3v2h2V5zm12 8h-2v2h2v-2zm-8 0H7v2h2v-2zm-4 0H3v2h2v-2zm12 4h-2v2h2v-2zm-8 0H7v2h2v-2zm-4 0H3v2h2v-2z"/></svg>');
     }
 
-    /* 辅助图标 */
+
     .role-title:nth-child(5)::before {
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23c41f3b" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm0-10h2v8h-2z"/></svg>');
     }
 
-    /* 悬停效果 */
+
     .role-title:hover {
         transform: translateY(-2px);
         box-shadow: 
@@ -289,12 +295,12 @@
 
 
 
-<!-- 在body开始处添加粒子效果 -->
+
 <canvas class="particles"></canvas>
 
-<!-- 在body结束前添加粒子脚本 -->
+
 <script>
-    // 简单粒子系统
+
     const canvas = document.querySelector('.particles');
     const ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
@@ -360,7 +366,7 @@
         
         
 
-       <!-- 上单 -->
+
 <div class="role-section">
 <div class="role-title"><span>上单</span></div>
     <div class="hero-list">
@@ -488,11 +494,11 @@
             <img src="https://game.gtimg.cn/images/lol/act/img/champion/KSante.png" alt="奎桑提">
             [奎桑提]<span class="logic-mark"></span>
         </div>
-        <!-- 更多上单英雄... -->
+ 
     </div>
 </div>
 
-        <!-- 中单 -->
+  
 <div class="role-section">
     <div class="role-title"><span>中单</span></div>
     <div class="hero-list">
@@ -620,11 +626,11 @@
             <img src="https://game.gtimg.cn/images/lol/act/img/champion/Mel.png" alt="梅尔">
             [梅尔]
         </div>
-        <!-- 更多中单英雄... -->
+    
     </div>
 </div>
 
-        <!-- 打野 -->
+ 
 <div class="role-section">
     <div class="role-title"><span>打野</span></div>
     <div class="hero-list">
@@ -708,12 +714,12 @@
             <img src="https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/Sejuani.png" alt="猪妹">
             [猪妹]
         </div>
-        <!-- 更多打野英雄... -->
+    
     </div>
 </div>
 
 
-        <!-- ADC -->
+
 <div class="role-section">
     <div class="role-title"><span>ADC</span></div>
     <div class="hero-list">
@@ -797,11 +803,11 @@
             <img src="https://ddragon.leagueoflegends.com/cdn/14.14.1/img/champion/Xayah.png" alt="逆羽">
             [逆羽]<span class="logic-mark">逻辑</span>
         </div>
-        <!-- 更多ADC英雄... -->
+    
     </div>
 </div>
 
-      <!-- 辅助 -->
+
 <div class="role-section">
     <div class="role-title"><span>辅助</span></div>
     <div class="hero-list">
@@ -878,9 +884,15 @@
             [荆棘之兴]
         </div>
        
-        <!-- 更多辅助英雄... -->
+ 
     </div>
 </div>
     </div>
+    
+    <head>
+
+  <script src="script.js" defer></script>
+</head>
+
 </body>
 </html>
